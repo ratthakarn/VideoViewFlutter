@@ -11,8 +11,8 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
-  String title1 = 'มาสเตอร์ อึ่ง';
-  String title2 = 'www.androidthai.in.th';
+  String title1 = 'หมอสันต์';
+  String title2 = 'Visitdrsant.blogspot.com';
 
   Widget showTitle() {
     return Text(
@@ -60,7 +60,7 @@ class _HomeState extends State<Home> {
               size: 48.0,
             ),
             title: Text(
-              'บล๊อคหมอสันต์',
+              'หมอสันต์',
               style: TextStyle(fontSize: 18.0),
             ),
             subtitle: Text('ตอบปัญหาสุขภาพ'),
@@ -73,11 +73,11 @@ class _HomeState extends State<Home> {
           ),
           ListTile(
             leading: Icon(
-              Icons.android,
-              color: Colors.green[900],
+              Icons.featured_video,
+              color: Colors.green[900],size: 48.0,
             ),
             title: Text(
-              'ชอบ ขอบ ขอบ 1',
+              'โภชนาการ',
               style: TextStyle(fontSize: 18.0),
             ),
             subtitle: Text('ตอบปัญหาสุขภาพ'),
@@ -91,10 +91,10 @@ class _HomeState extends State<Home> {
           ListTile(
             leading: Icon(
               Icons.face,
-              color: Colors.green[900],
+              color: Colors.green[900],size: 48.0,
             ),
             title: Text(
-              'ชอบ ขอบ ขอบ 2',
+              'ออกกำลังกาย',
               style: TextStyle(fontSize: 18.0),
             ),
             subtitle: Text('ตอบปัญหาสุขภาพ'),
@@ -107,11 +107,11 @@ class _HomeState extends State<Home> {
           ),
           ListTile(
             leading: Icon(
-              Icons.fingerprint,
-              color: Colors.green[900],
+              Icons.favorite,
+              color: Colors.green[900],size: 48.0,
             ),
             title: Text(
-              'ชอบ ขอบ ขอบ 3',
+              'จัดการความเครียด',
               style: TextStyle(fontSize: 18.0),
             ),
             subtitle: Text('ตอบปัญหาสุขภาพ'),
@@ -124,14 +124,14 @@ class _HomeState extends State<Home> {
           ),
           ListTile(
             leading: Icon(
-              Icons.headset,
-              color: Colors.green[900],
+              Icons.satellite,
+              color: Colors.green[900],size: 48.0,
             ),
             title: Text(
-              'ชอบ ขอบ ขอบ 4',
+              'Wellness Wecare',
               style: TextStyle(fontSize: 18.0),
             ),
-            subtitle: Text('ตอบปัญหาสุขภาพ'),
+            subtitle: Text('แคมป์สุขภาพ'),
             onTap: () {
               Navigator.of(context).pop();
               var menuRoute =
@@ -154,7 +154,7 @@ class _HomeState extends State<Home> {
         Container(
           margin: EdgeInsets.only(left: 30.0, right: 30.0),
           child: Text(
-              'Lorem Ipsum คือ เนื้อหาจำลองแบบเรียบๆ ที่ใช้กันในธุรกิจงานพิมพ์หรืองานเรียงพิมพ์ มันได้กลายมาเป็นเนื้อหาจำลองมาตรฐานของธุรกิจดังกล่าวมาตั้งแต่ศตวรรษที่ 16 เมื่อเครื่องพิมพ์โนเนมเครื่องหนึ่งนำรางตัวพิมพ์มาสลับสับตำแหน่งตัวอักษรเพื่อทำหนังสือตัวอย่าง Lorem Ipsum อยู่ยงคงกระพันมาไม่ใช่แค่เพียงห้าศตวรรษ แต่อยู่มาจนถึงยุคที่พลิกโฉมเข้าสู่งานเรียงพิมพ์ด้วยวิธีทางอิเล็กทรอนิกส์'),
+              'นพ.สันต์ ใจยอดศิลป์ พบ. Cert.Cardiovascular & Thoracic Surgery (GLH, NZ) วว.ศัลย์หัวใจหลอดเลือดและทรวงอก อว.เวชศาสตร์ครอบครัว, อดีตเป็นศัลยแพทย์หัวใจที่ต่อมาหันมาสนใจเวชศาสตร์ครอบครัว เคยทำงานบริหารเป็นผู้อำนวยการรพ.พญาไท2 อยู่ 6 ปี ตอนนี้เกษียณแล้วและไปตั้ง Wellness We care Center ที่อ.มวกเหล็ก เปิดแค้มป์สุขภาพ สอนให้คนมีสุขภาพดีด้วยตัวเอง (GHBY) และสอนคนที่ป่วยแล้วให้พลิกผันโรคด้วยตัวเอง(RDBY) ด้วย (1) โภชนาการที่มีพืชเป็นอาหารหลัก (2) การออกกำลังกาย (3) การจัดการความเครียดอย่างเป็นระบบ และ (4) การเข้ากลุ่มเพื่อนช่วยเพื่อน ทำงานจิตอาสาคือช่วยมูลนิธิสอนช่วยชีวิต มูลนิธิช่วยผ่าตัดหัวใจเด็ก และเป็นที่ปรึกษาให้กับรพ.มวกเหล็กด้วย มีงานอดิเรกทำสวนปลูกผักปลูกดอกไม้ เคยทำ "ไร่หมอสันต์เกษตรอินทรีย์" แล้วเลิกไปเพราะเงินหมด ตอนนี้หลงเชื่อเพื่อนและไปเริ่มทำฟาร์มใหม่อีกแล้วที่มวกเหล็ก ชื่อ Nature We Care Farm แบบว่า "..ไปโดนเขาหลอกอีกแล้ว น้องแก้วไม่เข็ด" แต่คราวนี้หมอสันต์มั่นใจว่าทำได้ยั่งยืนแน่นอนเพราะเพื่อนเป็นคนออกเงิน บล็อกนี้เป็นการสื่อสารแบบวันเวย์คือหมอสันต์เขียนมาข้างเดียว ท่านที่มีคำถามสุขภาพกรุณาส่่งไปให้หมอสันต์ทางอีเมลที่ chaiyodsilp@gmail.com โดยต้องออกตัวก่อนว่าหมอสันต์ไม่มีปัญญาตอบเมล์ได้หมดดอก แต่จะพยายามตอบคำถามที่ไม่ซ้ำกับของคนอื่นทุกเมล์'),
         ),
         Container(
           margin: EdgeInsets.all(30.0),
@@ -177,7 +177,7 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Video GKRGROUP'),
+        title: Text('หมอสันต์'),
       ),
       body: Container(
         child: showContent(),

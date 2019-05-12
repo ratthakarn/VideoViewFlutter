@@ -9,7 +9,7 @@ class Menu1 extends StatefulWidget {
 class _Menu1State extends State<Menu1> {
   FlutterWebviewPlugin objWebview = FlutterWebviewPlugin();
   static String url =
-      "https://gkrgroup.co.th";
+      "https://visitdrsant.blogspot.com/";
 
   @override
   void initState() {
