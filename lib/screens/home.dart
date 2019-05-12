@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_webview_plugin/flutter_webview_plugin.dart';
 
 class Home extends StatefulWidget {
   @override
@@ -8,6 +9,26 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
   String title1 = 'มาสเตอร์กุ้ง';
   String title2 = 'www.gkrgroup.co.th';
+
+  static String url = "https://www.youtube.com/playlist?list=PLC3bWXzQFIW1rN-oHGbo7W7jn1IB37CpG";
+  final objWebView = FlutterWebviewPlugin();
+  TextEditingController textEditingController =
+      TextEditingController(text: url);
+
+  @override
+  void initstate() {
+    super.initState();
+
+    objWebView.close();
+    textEditingController.addListener(() {});
+  }
+
+  @override
+  void dispose() {
+    objWebView.dispose();
+    textEditingController.dispose();
+    super.dispose();
+  }
 
   Widget showTitle() {
     return Text(
@@ -49,12 +70,21 @@ class _HomeState extends State<Home> {
             ),
           ),
           ListTile(
-            leading: Icon(Icons.home, color: Colors.green[300],),
-            title: Text('Home', style: TextStyle(fontSize: 18.0),),
+            leading: Icon(
+              Icons.home,
+              color: Colors.green[300],
+            ),
+            title: Text(
+              'Home',
+              style: TextStyle(fontSize: 18.0),
+            ),
           ),
           ListTile(
             leading: Icon(Icons.android),
-            title: Text('แอนดรอย์', style: TextStyle(fontSize: 18.0),),
+            title: Text(
+              'แอนดรอย์',
+              style: TextStyle(fontSize: 18.0),
+            ),
           )
         ],
       ),
@@ -63,12 +93,13 @@ class _HomeState extends State<Home> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return WebviewScaffold(
       appBar: AppBar(
         title: showTitle(),
-      ),
-      body: Text('This is body'),
-      drawer: menuDrawer(context),
+      ),url: url,
+      withJavascript: true,
+      withLocalStorage: true,
+      withZoom: true,
     );
   }
 }
