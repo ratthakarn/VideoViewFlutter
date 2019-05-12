@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'menu1.dart';
 
 class Home extends StatefulWidget {
   @override
@@ -54,11 +55,17 @@ class _HomeState extends State<Home> {
               color: Colors.green[900],
             ),
             title: Text(
-              'โดนใจ 1',
+              'บล๊อคหมอสันต์',
               style: TextStyle(fontSize: 18.0),
             ),
-            subtitle: Text('เพลงโดนใจฉัน'),onTap: (){
-              var ,menu1Route =  MaterialPageRoute();
+            subtitle: Text('ตอบปัญหาสุขภาพ'),
+            onTap: () {
+
+              Navigator.of(context).pop();
+              var menu1Route =
+                  MaterialPageRoute(builder: (BuildContext context) => Menu1());
+                  Navigator.of(context).push(menu1Route);
+                  
             },
           ),
           ListTile(
