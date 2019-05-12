@@ -7,42 +7,39 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
-  String title1 = 'มาสเตอร์กุ้ง';
-  String title2 = 'www.gkrgroup.co.th';
+  String title1 = 'มาสเตอร์ อึ่ง';
+  String title2 = 'www.androidthai.in.th';
 
-  static String url = "https://www.youtube.com/playlist?list=PLC3bWXzQFIW1rN-oHGbo7W7jn1IB37CpG";
+  static String url =
+      "https://www.youtube.com/watch?v=mtwqZpV3K1c&list=PLHk7DPiGKGNDEI-YvHjhztFCIHBBXmY7o";
   final objWebView = FlutterWebviewPlugin();
-  TextEditingController textEditingController =
-      TextEditingController(text: url);
 
   @override
-  void initstate() {
+  void initState() {
     super.initState();
 
     objWebView.close();
-    textEditingController.addListener(() {});
   }
 
   @override
   void dispose() {
     objWebView.dispose();
-    textEditingController.dispose();
     super.dispose();
   }
 
   Widget showTitle() {
     return Text(
       title1,
-      style: TextStyle(color: Colors.white),
+      style: TextStyle(
+        color: Colors.white,
+        fontSize: 18.0,
+        fontWeight: FontWeight.bold,
+      ),
     );
   }
 
   Widget showSubTitle() {
-    return Text(
-      title2,
-      style: TextStyle(
-          color: Colors.white, fontSize: 15.0, fontWeight: FontWeight.bold),
-    );
+    return Text(title2);
   }
 
   Widget showLogo() {
@@ -54,7 +51,7 @@ class _HomeState extends State<Home> {
       child: ListView(
         children: <Widget>[
           DrawerHeader(
-            decoration: BoxDecoration(color: Colors.blue[700]),
+            decoration: BoxDecoration(color: Colors.green[300]),
             child: Container(
               child: Column(
                 children: <Widget>[
@@ -72,7 +69,7 @@ class _HomeState extends State<Home> {
           ListTile(
             leading: Icon(
               Icons.home,
-              color: Colors.green[300],
+              color: Colors.green[900],
             ),
             title: Text(
               'Home',
@@ -80,9 +77,12 @@ class _HomeState extends State<Home> {
             ),
           ),
           ListTile(
-            leading: Icon(Icons.android),
+            leading: Icon(
+              Icons.android,
+              color: Colors.green[900],
+            ),
             title: Text(
-              'แอนดรอย์',
+              'แอนดรอยด์',
               style: TextStyle(fontSize: 18.0),
             ),
           )
@@ -93,13 +93,12 @@ class _HomeState extends State<Home> {
 
   @override
   Widget build(BuildContext context) {
-    return WebviewScaffold(
-      appBar: AppBar(
-        title: showTitle(),
-      ),url: url,
+    return Scaffold(
+        body: WebviewScaffold(
+      url: url,
       withJavascript: true,
       withLocalStorage: true,
       withZoom: true,
-    );
+    ));
   }
 }
