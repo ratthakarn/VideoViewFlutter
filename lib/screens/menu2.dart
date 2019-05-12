@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_webview_plugin/flutter_webview_plugin.dart';
 
-class Menu1 extends StatefulWidget {
+class Menu2 extends StatefulWidget {
   @override
-  _Menu1State createState() => _Menu1State();
+  _Menu2State createState() => _Menu2State();
 }
 
-class _Menu1State extends State<Menu1> {
+class _Menu2State extends State<Menu2> {
   FlutterWebviewPlugin objWebview = FlutterWebviewPlugin();
   static String url =
-      "https://gkrgroup.co.th";
+      "https://gkrshop.ecwid.com";
 
   @override
   void initState() {

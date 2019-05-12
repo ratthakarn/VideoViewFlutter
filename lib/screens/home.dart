@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 import 'menu1.dart';
+import 'menu2.dart';
+import 'menu3.dart';
+import 'menu4.dart';
+import 'menu5.dart';
 
 class Home extends StatefulWidget {
   @override
@@ -52,7 +56,7 @@ class _HomeState extends State<Home> {
           ListTile(
             leading: Icon(
               Icons.home,
-              color: Colors.green[900],
+              color: Colors.green[900],size: 48.0,
             ),
             title: Text(
               'บล๊อคหมอสันต์',
@@ -60,12 +64,10 @@ class _HomeState extends State<Home> {
             ),
             subtitle: Text('ตอบปัญหาสุขภาพ'),
             onTap: () {
-
               Navigator.of(context).pop();
               var menu1Route =
                   MaterialPageRoute(builder: (BuildContext context) => Menu1());
-                  Navigator.of(context).push(menu1Route);
-                  
+              Navigator.of(context).push(menu1Route);
             },
           ),
           ListTile(
@@ -74,9 +76,67 @@ class _HomeState extends State<Home> {
               color: Colors.green[900],
             ),
             title: Text(
-              'ชอบ 1',
+              'ชอบ ขอบ ขอบ 1',
               style: TextStyle(fontSize: 18.0),
             ),
+            subtitle: Text('ตอบปัญหาสุขภาพ'),
+            onTap: () {
+              Navigator.of(context).pop();
+              var menuRoute =
+                  MaterialPageRoute(builder: (BuildContext context) => Menu2());
+              Navigator.of(context).push(menuRoute);
+            },
+          ),
+          ListTile(
+            leading: Icon(
+              Icons.face,
+              color: Colors.green[900],
+            ),
+            title: Text(
+              'ชอบ ขอบ ขอบ 2',
+              style: TextStyle(fontSize: 18.0),
+            ),
+            subtitle: Text('ตอบปัญหาสุขภาพ'),
+            onTap: () {
+              Navigator.of(context).pop();
+              var menuRoute =
+                  MaterialPageRoute(builder: (BuildContext context) => Menu3());
+              Navigator.of(context).push(menuRoute);
+            },
+          ),
+          ListTile(
+            leading: Icon(
+              Icons.fingerprint,
+              color: Colors.green[900],
+            ),
+            title: Text(
+              'ชอบ ขอบ ขอบ 3',
+              style: TextStyle(fontSize: 18.0),
+            ),
+            subtitle: Text('ตอบปัญหาสุขภาพ'),
+            onTap: () {
+              Navigator.of(context).pop();
+              var menuRoute =
+                  MaterialPageRoute(builder: (BuildContext context) => Menu4());
+              Navigator.of(context).push(menuRoute);
+            },
+          ),
+          ListTile(
+            leading: Icon(
+              Icons.headset,
+              color: Colors.green[900],
+            ),
+            title: Text(
+              'ชอบ ขอบ ขอบ 4',
+              style: TextStyle(fontSize: 18.0),
+            ),
+            subtitle: Text('ตอบปัญหาสุขภาพ'),
+            onTap: () {
+              Navigator.of(context).pop();
+              var menuRoute =
+                  MaterialPageRoute(builder: (BuildContext context) => Menu5());
+              Navigator.of(context).push(menuRoute);
+            },
           )
         ],
       ),
