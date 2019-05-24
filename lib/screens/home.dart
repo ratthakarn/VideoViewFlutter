@@ -158,12 +158,12 @@ class _HomeState extends State<Home> {
           margin: EdgeInsets.all(0.0),
           child: Image.asset('images/bannerflutter.jpg'),
         ),
-        Container(
-          margin: EdgeInsets.only(left: 30.0, right: 30.0),
-          child: Text(
-              'บริษัท จี.เค.อาร์.กรุ๊ป'),
-        ),
-    
+  
+      Container(
+          margin: EdgeInsets.all(0.0),
+          child: Image.asset('images/template.jpg'),
+        ),    
+
       ],
     );
   }
