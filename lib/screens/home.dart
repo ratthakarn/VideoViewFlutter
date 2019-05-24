@@ -26,7 +26,14 @@ class _HomeState extends State<Home> {
   }
 
   Widget showSubTitle() {
-    return Text(title2,);
+    return Text(
+      title2,
+      style: TextStyle(
+        color: Colors.white,
+        fontSize: 9.0,
+        fontWeight: FontWeight.bold,
+        ),
+    );
   }
 
   Widget showLogo() {
@@ -80,7 +87,7 @@ class _HomeState extends State<Home> {
               'RME',
               style: TextStyle(fontSize: 18.0),
             ),
-            subtitle: Text('เวปไซด์'),
+            subtitle: Text('ระบบบันทึกเสียง'),
             onTap: () {
               Navigator.of(context).pop();
               var menuRoute =
@@ -97,7 +104,7 @@ class _HomeState extends State<Home> {
               'STUDIOLOGIC',
               style: TextStyle(fontSize: 18.0),
             ),
-            subtitle: Text('เวปไซด์'),
+            subtitle: Text('คีย์บอร์ดและซินธีไซด์เซอร์'),
             onTap: () {
               Navigator.of(context).pop();
               var menuRoute =
