@@ -161,7 +161,7 @@ class _HomeState extends State<Home> {
         Container(
           margin: EdgeInsets.only(left: 30.0, right: 30.0),
           child: Text(
-              'บริษัท จี.เค.อาร์.กรุ๊ป จำกัด จำหน่ายอุปกรณ์บันทึกภาพและเสียง ผลิตสื่อ '),
+              'บริษัท จี.เค.อาร์.กรุ๊ป'),
         ),
     
       ],
