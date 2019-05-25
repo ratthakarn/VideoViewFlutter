@@ -33,7 +33,7 @@ class _Menu7State extends State<Menu7> {
       withLocalStorage: true,
       withZoom: true,
       appBar: AppBar(
-        title: Text('GKRSHOP ONLINE'),
+        title: Text('RODE MIC'),
       ),
     );
   }

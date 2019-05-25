@@ -150,14 +150,14 @@ class _HomeState extends State<Home> {
           ),
           ListTile(
             leading: Icon(
-              Icons.favorite,
+              Icons.lightbulb_outline,
               color: Colors.blueGrey[900],size: 32.0,
             ),
             title: Text(
               'SPL',
               style: TextStyle(fontSize: 18.0),
             ),
-            subtitle: Text('เวปไซด์'),
+            subtitle: Text('พรีไมค์,โพเซสเซอร์'),
             onTap: () {
               Navigator.of(context).pop();
               var menuRoute =
@@ -167,14 +167,14 @@ class _HomeState extends State<Home> {
           ),
           ListTile(
             leading: Icon(
-              Icons.favorite,
+              Icons.mic,
               color: Colors.blueGrey[900],size: 32.0,
             ),
             title: Text(
               'RODE',
               style: TextStyle(fontSize: 18.0),
             ),
-            subtitle: Text('เวปไซด์'),
+            subtitle: Text('ไมโครโฟน'),
             onTap: () {
               Navigator.of(context).pop();
               var menuRoute =
