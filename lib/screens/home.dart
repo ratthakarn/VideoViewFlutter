@@ -4,6 +4,8 @@ import 'menu2.dart';
 import 'menu3.dart';
 import 'menu4.dart';
 import 'menu5.dart';
+import 'menu6.dart';
+import 'menu7.dart';
 
 class Home extends StatefulWidget {
   @override
@@ -145,7 +147,41 @@ class _HomeState extends State<Home> {
                   MaterialPageRoute(builder: (BuildContext context) => Menu5());
               Navigator.of(context).push(menuRoute);
             },
-          )
+          ),
+          ListTile(
+            leading: Icon(
+              Icons.favorite,
+              color: Colors.blueGrey[900],size: 32.0,
+            ),
+            title: Text(
+              'SPL',
+              style: TextStyle(fontSize: 18.0),
+            ),
+            subtitle: Text('เวปไซด์'),
+            onTap: () {
+              Navigator.of(context).pop();
+              var menuRoute =
+                  MaterialPageRoute(builder: (BuildContext context) => Menu6());
+              Navigator.of(context).push(menuRoute);
+            },
+          ),
+          ListTile(
+            leading: Icon(
+              Icons.favorite,
+              color: Colors.blueGrey[900],size: 32.0,
+            ),
+            title: Text(
+              'RODE',
+              style: TextStyle(fontSize: 18.0),
+            ),
+            subtitle: Text('เวปไซด์'),
+            onTap: () {
+              Navigator.of(context).pop();
+              var menuRoute =
+                  MaterialPageRoute(builder: (BuildContext context) => Menu7());
+              Navigator.of(context).push(menuRoute);
+            },
+          ),
         ],
       ),
     );
